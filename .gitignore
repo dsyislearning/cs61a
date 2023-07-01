@@ -1,6 +1,7 @@
 __pycache__/
 
 .ok_history
+.ok_storage
 .ok_storage.bak
 .ok_storage.dat
 .ok_storage.dir
