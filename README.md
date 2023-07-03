@@ -15,6 +15,7 @@ Labs
 
 - Lab 01: Functions, Control
 - Lab 02: Higher-Order Functions, Lambda Expressions
+- Lab 03: Midterm Review
 
 ---
 
