@@ -8,6 +8,7 @@ Homework
 
 - HW 01: Functions, Control
 - HW 02: Higher-Order Functions, Lambda Expressions
+- HW 03: Recursion, Tree Recursion
 
 ---
 
@@ -16,6 +17,7 @@ Labs
 - Lab 01: Functions, Control
 - Lab 02: Higher-Order Functions, Lambda Expressions
 - Lab 03: Midterm Review
+- Lab 04: Recursion, Tree Recursion, Python Lists
 
 ---
 
