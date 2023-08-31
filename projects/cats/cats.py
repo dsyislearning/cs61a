@@ -148,7 +148,15 @@ def autocorrect(typed_word, word_list, diff_function, limit):
     'testing'
     """
     # BEGIN PROBLEM 5
-    "*** YOUR CODE HERE ***"
+    if typed_word in word_list:
+        return typed_word
+    diff_list = [diff_function(typed_word, word, limit) for word in word_list]
+    lowest_difference = min(diff_list)
+    idx = diff_list.index(lowest_difference)
+    if lowest_difference <= limit:
+        return word_list[idx]
+    else:
+        return typed_word
     # END PROBLEM 5
 
 
@@ -175,7 +183,22 @@ def feline_fixes(typed, source, limit):
     5
     """
     # BEGIN PROBLEM 6
-    assert False, 'Remove this line'
+    # def f(typed, source, limit, result):
+    #     if typed == '' or source == '':
+    #         return result + len(typed) + len(source)
+    #     if result > limit:
+    #         return result
+    #     if typed[0] != source[0]:
+    #         result += 1
+    #     return f(typed[1:], source[1:], limit, result)
+    # return f(typed, source, limit, 0)
+    if typed == source or limit < 0:
+        return 0
+    if typed == '' or source == '': # if not typed or not source
+        return len(typed) + len(source)
+    if typed[0] != source[0]:
+        return 1 + feline_fixes(typed[1:], source[1:], limit - 1)
+    return feline_fixes(typed[1:], source[1:], limit)
     # END PROBLEM 6
 
 
@@ -194,22 +217,23 @@ def minimum_mewtations(typed, source, limit):
     >>> minimum_mewtations("ckiteus", "kittens", big_limit) # ckiteus -> kiteus -> kitteus -> kittens
     3
     """
-    assert False, 'Remove this line'
-    if ___________:  # Base cases should go here, you may add more base cases as needed.
+    if typed == source or limit < 0:  # Base cases should go here, you may add more base cases as needed.
         # BEGIN
-        "*** YOUR CODE HERE ***"
+        return 0
         # END
+    if typed == '' or source == '':
+        return len(typed) + len(source)
     # Recursive cases should go below here
-    if ___________:  # Feel free to remove or add additional cases
+    if typed[0] == source[0]:  # Feel free to remove or add additional cases
         # BEGIN
-        "*** YOUR CODE HERE ***"
+        return minimum_mewtations(typed[1:], source[1:], limit)
         # END
     else:
-        add = ...  # Fill in these lines
-        remove = ...
-        substitute = ...
+        add = 1 + minimum_mewtations(typed, source[1:], limit - 1) # Fill in these lines
+        remove = 1 + minimum_mewtations(typed[1:], source, limit - 1)
+        substitute = 1 + minimum_mewtations(typed[1:], source[1:], limit - 1)
         # BEGIN
-        "*** YOUR CODE HERE ***"
+        return min(add, remove, substitute)
         # END
 
 
@@ -217,7 +241,7 @@ def final_diff(typed, source, limit):
     """A diff function that takes in a string TYPED, a string SOURCE, and a number LIMIT.
     If you implement this function, it will be used."""
     assert False, 'Remove this line to use your final_diff function.'
-
+    
 
 FINAL_DIFF_LIMIT = 6  # REPLACE THIS WITH YOUR LIMIT
 
