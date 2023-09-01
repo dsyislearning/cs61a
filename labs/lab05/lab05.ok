@@ -1,0 +1,30 @@
+{
+    "name": "Lab 5",
+    "endpoint": "cal/cs61a/sp23/lab05",
+    "src": [
+        "lab05.py"
+    ],
+    "tests": {
+        "lab*.py": "doctest",
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "flatten",
+        "my_map",
+        "my_map_syntax_check",
+        "my_filter",
+        "my_filter_syntax_check",
+        "my_reduce",
+        "distance",
+        "closer_city",
+        "check_city_abstraction"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
