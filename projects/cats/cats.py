@@ -241,7 +241,7 @@ def final_diff(typed, source, limit):
     """A diff function that takes in a string TYPED, a string SOURCE, and a number LIMIT.
     If you implement this function, it will be used."""
     assert False, 'Remove this line to use your final_diff function.'
-    
+
 
 FINAL_DIFF_LIMIT = 6  # REPLACE THIS WITH YOUR LIMIT
 
@@ -275,7 +275,14 @@ def report_progress(typed, prompt, user_id, upload):
     0.2
     """
     # BEGIN PROBLEM 8
-    "*** YOUR CODE HERE ***"
+    process = 0
+    for i in range(len(typed)):
+        if typed[i] != prompt[i]:
+            break
+        process += 1
+    process /= len(prompt)
+    upload({'id': user_id, 'progress': process})
+    return process
     # END PROBLEM 8
 
 
@@ -297,7 +304,9 @@ def time_per_word(words, times_per_player):
     [[6, 3, 6, 2], [10, 6, 1, 2]]
     """
     # BEGIN PROBLEM 9
-    "*** YOUR CODE HERE ***"
+    all_words = [word for word in words]
+    all_times = [[times_per_player[j][i + 1] - times_per_player[j][i] for i in range(len(times_per_player[j]) - 1)] for j in range(len(times_per_player))]
+    return match(all_words, all_times)
     # END PROBLEM 9
 
 
@@ -319,7 +328,9 @@ def fastest_words(match):
     player_indices = range(len(get_all_times(match)))  # contains an *index* for each player
     word_indices = range(len(get_all_words(match)))    # contains an *index* for each word
     # BEGIN PROBLEM 10
-    "*** YOUR CODE HERE ***"
+    times_per_word = [[time(match, player_index, word_index) for player_index in player_indices] for word_index in word_indices]
+    fastest_player_per_word = [times_per_word[word_index].index(min(times_per_word[word_index])) for word_index in word_indices]
+    return [[get_word(match, word_index) for word_index in word_indices if fastest_player_per_word[word_index] == player_index] for player_index in player_indices]
     # END PROBLEM 10
 
 

@@ -24,6 +24,6 @@ Labs
 Projects
 
 - Project 1: The Game of Hog
-
+- Project 2: CS 61A Autocorrected Typing Software
 
 ---
