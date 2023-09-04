@@ -9,6 +9,7 @@ Homework
 - HW 01: Functions, Control
 - HW 02: Higher-Order Functions, Lambda Expressions
 - HW 03: Recursion, Tree Recursion
+- HW 04: Homework 4: Trees, Data Abstraction
 
 ---
 
@@ -19,6 +20,7 @@ Labs
 - Lab 03: Midterm Review
 - Lab 04: Recursion, Tree Recursion, Python Lists
 - Lab 05: Data Abstraction, Sequences
+- Lab 06: Mutability, Iterators
 
 ---
 
