@@ -24,6 +24,7 @@ Labs
 - Lab 05: Data Abstraction, Sequences
 - Lab 06: Mutability, Iterators
 - Lab 07: Object-Oriented Programming
+- Lab 08: OOP, Inheritance
 
 ---
 
