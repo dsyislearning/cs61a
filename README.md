@@ -10,6 +10,7 @@ Homework
 - HW 02: Higher-Order Functions, Lambda Expressions
 - HW 03: Recursion, Tree Recursion
 - HW 04: Trees, Data Abstraction
+- HW 05: Generators
 
 ---
 
