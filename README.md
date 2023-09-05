@@ -11,6 +11,7 @@ Homework
 - HW 03: Recursion, Tree Recursion
 - HW 04: Trees, Data Abstraction
 - HW 05: Generators
+- HW 06: Object Oriented Programming, Linked Lists
 
 ---
 
