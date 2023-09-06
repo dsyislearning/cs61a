@@ -12,6 +12,7 @@ Homework
 - HW 04: Trees, Data Abstraction
 - HW 05: Generators
 - HW 06: Object Oriented Programming, Linked Lists
+- HW 07: Linked Lists, Mutable Trees
 
 ---
 
