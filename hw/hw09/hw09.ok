@@ -1,0 +1,25 @@
+{
+    "name": "Homework 9",
+    "endpoint": "cal/cs61a/sp23/hw09",
+    "src": [
+        "hw09.scm"
+    ],
+    "tests": {
+        "hw*.py": "doctest",
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "ascending",
+        "filter",
+        "interleave",
+        "no_repeats"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "grading",
+        "analytics",
+        "unlock",
+        "backup"
+    ]
+}

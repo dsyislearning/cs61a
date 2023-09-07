@@ -14,6 +14,7 @@ Homework
 - HW 06: Object Oriented Programming, Linked Lists
 - HW 07: Linked Lists, Mutable Trees
 - HW 08: Scheme
+- HW 09: Scheme Lists
 
 ---
 
