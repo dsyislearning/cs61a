@@ -7,3 +7,5 @@ __pycache__/
 .ok_storage.dir
 
 tests/
+
+labs/lab11/editor/

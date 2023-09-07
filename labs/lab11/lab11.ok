@@ -1,0 +1,25 @@
+{
+    "name": "Lab 11",
+    "endpoint": "cal/cs61a/sp23/lab11",
+    "src": [
+        "lab11.scm"
+    ],
+    "tests": {
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "combinations",
+        "over_or_under",
+        "make_adder",
+        "composed",
+        "repeat"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
