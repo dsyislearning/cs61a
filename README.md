@@ -27,6 +27,7 @@ Labs
 - Lab 07: Object-Oriented Programming
 - Lab 08: OOP, Inheritance
 - Lab 09: Mutable Trees, Efficiency
+- Lab 10: Midterm Review
 
 ---
 

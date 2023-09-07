@@ -1,0 +1,32 @@
+{
+    "name": "Lab 10",
+    "endpoint": "cal/cs61a/sp23/lab10",
+    "src": [
+        "lab10.py"
+    ],
+    "tests": {
+        "lab*.py": "doctest",
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "subseqs",
+        "non_decrease_subseqs",
+        "num_trees",
+        "partition_gen",
+        "trade",
+        "shuffle",
+        "insert",
+        "deep_len",
+        "make_to_string",
+        "reverse_other",
+        "efficiency_practice"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
