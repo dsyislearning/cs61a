@@ -13,6 +13,7 @@ Homework
 - HW 05: Generators
 - HW 06: Object Oriented Programming, Linked Lists
 - HW 07: Linked Lists, Mutable Trees
+- HW 08: Scheme
 
 ---
 
