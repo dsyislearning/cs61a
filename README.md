@@ -31,6 +31,7 @@ Labs
 - Lab 09: Mutable Trees, Efficiency
 - Lab 10: Midterm Review
 - Lab 11: Scheme
+- Lab 12: Scheme Lists, Interpreters
 
 ---
 
