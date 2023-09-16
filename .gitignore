@@ -8,7 +8,4 @@ __pycache__/
 
 tests/
 
-labs/lab11/editor/
-labs/lab12/editor/
-hw/hw08/editor/
-hw/hw09/editor/
+editor/
