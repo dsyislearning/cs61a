@@ -15,6 +15,7 @@ Homework
 - HW 07: Linked Lists, Mutable Trees
 - HW 08: Scheme
 - HW 09: Scheme Lists
+- HW 10: SQL
 
 ---
 
